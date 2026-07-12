@@ -1,0 +1,700 @@
+<!doctype html>
+<html class="h-100" lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta name="description" content="A well made and handcrafted Bootstrap 5 template">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="uag.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/uag.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/uag.png">
+  <meta name="author" content="Holger Koenemann">
+  <meta name="generator" content="Eleventy v2.0.0">
+  <meta name="HandheldFriendly" content="true">
+   <title>U7 PI: Proyecto integrador: Elaboración de cuadro comparativo en digital.</title>
+  <link rel="stylesheet" href="css/theme.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+   <style>
+
+/* inter-300 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local(''),
+       url('fonts/inter-v12-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('fonts/inter-v12-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* inter-400 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(''),
+       url('fonts/inter-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('fonts/inter-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local(''),
+       url('fonts/inter-v12-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('fonts/inter-v12-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(''),
+       url('fonts/inter-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('fonts/inter-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+</style>
+
+
+  </head>
+
+  <body class="  mt-0" data-bs-spy="scroll" data-bs-target="#navScroll">
+
+ <nav id="navScroll" class="navbar navbar-expand-lg fixed-top">
+
+    <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="img/logoinv.png"
+                alt="Logo"
+                class="navbar-logo">
+
+    <span class="fw-bold">
+        U7 PI: Proyecto Integrador
+    </span>
+        </a>
+        <!-- Botón hamburguesa -->
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal"
+                aria-expanded="false"
+                aria-label="Mostrar menú">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <!-- Menú -->
+        <div class="collapse navbar-collapse justify-content-end" id="menuPrincipal">
+
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#conceptos">Conceptos básicos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#comparacion">Comparación de modelos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="history.html">Evolución tecnológica</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#servicios">Ejemplos de servicios</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="nube.html">Uso de la nube</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="privacidad.html">Privacidad de datos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="conclusiones.html">Conclusiones</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="referencias.html">Referencias</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="actividades.html">Actividades</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+  </nav>
+<main class="privacy-hero">
+<div class="overlay"></div>
+
+ <section id="actividad1" >
+
+    <div class="container">
+        <h1 class="section-title">Actividades</h1>
+
+        <h2 class="section-title">
+            🎯 Relaciona los conceptos
+        </h2>
+
+        <p class="activity-text">
+            Selecciona un concepto y después su definición correspondiente.
+        </p>
+
+        <p class="activity-text">
+            Correctas:
+            <span id="score">0</span>/4
+        </p>
+
+        <div class="matching-wrapper">
+
+            <!-- SVG donde se dibujarán las líneas -->
+            <svg id="connection-svg"></svg>
+
+            <div class="matching-container">
+
+                <!-- CONCEPTOS -->
+
+                <div class="concept-column">
+
+                    <div class="concept" data-match="cloud">
+                        <span class="dot"></span>
+                        ☁ Cloud Computing
+                    </div>
+
+                    <div class="concept" data-match="iaas">
+                        <span class="dot"></span>
+                        🏗️ IaaS
+                    </div>
+
+                    <div class="concept" data-match="paas">
+                        <span class="dot"></span>
+                        ⚙️ PaaS
+                    </div>
+
+                    <div class="concept" data-match="saas">
+                        <span class="dot"></span>
+                        💻 SaaS
+                    </div>
+
+                </div>
+
+                <!-- DEFINICIONES -->
+
+                <div class="definition-column">
+
+                    <div class="definition" data-match="paas">
+                        <span class="dot"></span>
+                        Plataforma para desarrollar aplicaciones.
+                    </div>
+
+                    <div class="definition" data-match="cloud">
+                        <span class="dot"></span>
+                        Tecnología que permite acceder a recursos mediante Internet.
+                    </div>
+
+                    <div class="definition" data-match="saas">
+                        <span class="dot"></span>
+                        Software accesible desde Internet.
+                    </div>
+
+                    <div class="definition" data-match="iaas">
+                        <span class="dot"></span>
+                        Infraestructura virtual bajo demanda.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="victory-message" class="activity-text"></div>
+
+    </div>
+
+</section>
+
+<section id="actividad2" >
+
+    <div class="container">
+
+        <h2 class="section-title">
+            🧩 Clasifica los servicios Cloud
+        </h2>
+
+        <p class="activity-text">
+            Arrastra cada servicio al modelo de nube correcto.
+        </p>
+        <p class="activity-text"
+            Clasificados correctamente:
+            <span id="drag-score">0</span>/6
+        </p>
+
+        <div id="drag-message"></div>
+
+        <div class="drag-container">
+
+            <!-- Zonas -->
+
+            <div class="drop-zone" data-model="iaas">
+
+                <h3>🏗️ IaaS</h3>
+
+            </div>
+
+            <div class="drop-zone" data-model="paas">
+
+                <h3>⚙️ PaaS</h3>
+
+            </div>
+
+            <div class="drop-zone" data-model="saas">
+
+                <h3>💻 SaaS</h3>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="logo-container">
+
+            <div class="service-logo-card"
+                draggable="true"
+                data-model="iaas"
+                id="aws">
+
+                <img src="img/aws.png">
+
+                <span>AWS</span>
+
+            </div>
+
+            <div class="service-logo-card"
+                draggable="true"
+                data-model="iaas"
+                id="azure">
+
+                <img src="img/azure.png">
+
+                <span>Azure</span>
+
+            </div>
+
+            <div class="service-logo-card"
+                draggable="true"
+                data-model="paas"
+                id="heroku">
+
+                <img src="img/heroku.png">
+
+                <span>Heroku</span>
+
+            </div>
+
+            <div class="service-logo-card"
+                draggable="true"
+                data-model="paas"
+                id="gae">
+
+                <img src="img/gcloud.png">
+
+                <span>App Engine</span>
+
+            </div>
+
+            <div class="service-logo-card"
+                draggable="true"
+                data-model="saas"
+                id="m365">
+
+                <img src="img/m365.png">
+
+                <span>Microsoft 365</span>
+
+            </div>
+
+            <div class="service-logo-card"
+                draggable="true"
+                data-model="saas"
+                id="salesforce">
+
+                <img src="img/salesforce.png">
+
+                <span>Salesforce</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+</main>
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-content">
+
+            <h5>Proyecto Integrador</h5>
+
+            <p>
+                Administración de Servicios · Maestría en Tecnologías de la Información y Comunicación
+            </p>
+
+            <p class="footer-author">
+                Desarrollado por <strong>Ing. Andrea Torres Andrade</strong>
+            </p>
+
+            <a href="https://www.uag.mx/" target="_blank">
+                Universidad Autónoma de Guadalajara
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/aos.js"></script>
+<script>
+AOS.init({
+ duration: 800, // values from 0 to 3000, with step 50ms
+});
+</script>
+<script>
+    function mostrarActividad(id){
+
+    document.getElementById("menu-actividades").style.display="none";
+
+    document.getElementById(id).style.display="block";
+
+}
+function volverMenu(){
+
+    document.getElementById("actividad1").style.display="none";
+
+    document.getElementById("actividad2").style.display="none";
+
+    document.getElementById("menu-actividades").style.display="block";
+
+}
+</script>
+<script>
+  let scrollpos = window.scrollY
+  const header = document.querySelector(".navbar")
+  const header_height = header.offsetHeight
+
+  const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm")
+  const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm")
+
+  window.addEventListener('scroll', function() {
+    scrollpos = window.scrollY;
+
+    if (scrollpos >= header_height) { add_class_on_scroll() }
+    else { remove_class_on_scroll() }
+
+    console.log(scrollpos)
+  })
+
+function validateMatch(){
+
+    if(!selectedConcept || !selectedDefinition)
+        return;
+
+    if(selectedConcept.dataset.match === selectedDefinition.dataset.match){
+
+        selectedConcept.classList.add("correct");
+        selectedDefinition.classList.add("correct");
+
+    }else{
+
+        selectedConcept.classList.add("wrong");
+        selectedDefinition.classList.add("wrong");
+
+    }
+
+}
+
+const concepts = document.querySelectorAll(".concept");
+const definitions = document.querySelectorAll(".definition");
+
+const svg = document.getElementById("connection-svg");
+
+let selectedConcept = null;
+let score = 0;
+
+const scoreText = document.getElementById("score");
+
+concepts.forEach(concept=>{
+
+    concept.addEventListener("click",()=>{
+
+        if(concept.classList.contains("completed"))
+            return;
+
+        concepts.forEach(c=>c.classList.remove("selected"));
+
+        concept.classList.add("selected");
+
+        selectedConcept=concept;
+
+    });
+
+});
+
+
+definitions.forEach(definition=>{
+
+    definition.addEventListener("click",()=>{
+
+        if(!selectedConcept)
+            return;
+
+        if(definition.classList.contains("completed"))
+            return;
+
+        if(selectedConcept.dataset.match===definition.dataset.match){
+
+            selectedConcept.classList.add("correct","completed");
+
+            definition.classList.add("correct","completed");
+
+            drawConnection(selectedConcept,definition);
+
+            score++;
+
+            scoreText.textContent=score;
+
+            selectedConcept.classList.remove("selected");
+
+            selectedConcept=null;
+
+            if(score===4){
+
+                document.getElementById("victory-message").innerHTML=`
+
+                    <div class="activity-text">
+
+                         ¡Excelente!
+
+                        <br><br>
+
+                        Has completado el desafío Cloud.
+
+                    </div>
+
+                `;
+
+            }
+
+        }
+
+        else{
+
+            definition.classList.add("wrong");
+            selectedConcept.classList.add("wrong");
+
+            setTimeout(()=>{
+
+                definition.classList.remove("wrong");
+
+                selectedConcept.classList.remove("wrong","selected");
+
+                selectedConcept=null;
+
+            },700);
+
+        }
+
+    });
+
+});
+
+function drawConnection(concept, definition){
+
+    const svgRect = svg.getBoundingClientRect();
+
+    const c = concept.getBoundingClientRect();
+    const d = definition.getBoundingClientRect();
+
+    // Sale del borde derecho del concepto
+    const x1 = c.right - svgRect.left;
+
+    // Centro vertical del concepto
+    const y1 = c.top + c.height / 2 - svgRect.top;
+
+    // Llega al borde izquierdo de la definición
+    const x2 = d.left - svgRect.left;
+
+    // Centro vertical de la definición
+    const y2 = d.top + d.height / 2 - svgRect.top;
+
+    const line = document.createElementNS(
+        "http://www.w3.org/2000/svg",
+        "line"
+    );
+
+    line.setAttribute("x1", x1);
+    line.setAttribute("y1", y1);
+    line.setAttribute("x2", x2);
+    line.setAttribute("y2", y2);
+
+    line.setAttribute("stroke", "#7be4ff");
+    line.setAttribute("stroke-width", "4");
+    line.setAttribute("stroke-linecap", "round");
+
+    line.style.filter = "drop-shadow(0 0 10px #7be4ff)";
+
+    svg.appendChild(line);
+
+    // Longitud de la línea
+    const length = line.getTotalLength();
+
+    // Preparar animación
+    line.style.strokeDasharray = length;
+    line.style.strokeDashoffset = length;
+
+    // Forzar render
+    line.getBoundingClientRect();
+
+    // Animación
+    line.style.transition = "stroke-dashoffset .8s ease";
+
+    line.style.strokeDashoffset = "0";
+
+}
+
+
+
+
+let dragged = null;
+let dragScore = 0;
+
+const scoreDrag = document.getElementById("drag-score");
+const logoContainer = document.querySelector(".logo-container");
+const dragMessage = document.getElementById("drag-message");
+
+document.querySelectorAll(".service-logo-card").forEach(card=>{
+
+    card.addEventListener("dragstart",()=>{
+
+        if(card.classList.contains("completed"))
+            return;
+
+        dragged = card;
+
+    });
+
+});
+
+document.querySelectorAll(".drop-zone").forEach(zone=>{
+
+    zone.addEventListener("dragover",(e)=>{
+
+        e.preventDefault();
+
+    });
+
+    zone.addEventListener("drop",(e)=>{
+
+        e.preventDefault();
+
+        if(!dragged) return;
+
+        if(dragged.dataset.model === zone.dataset.model){
+
+            zone.appendChild(dragged);
+
+            dragged.classList.add("completed");
+
+            dragged.setAttribute("draggable","false");
+
+            zone.classList.add("success");
+
+            dragScore++;
+
+            scoreDrag.textContent = dragScore;
+
+            setTimeout(()=>{
+
+                zone.classList.remove("success");
+
+            },700);
+
+            if(dragScore === 6){
+
+                dragMessage.innerHTML = `
+
+                    <div class="activity-text">
+
+                     ¡Excelente!
+
+                        <br><br>
+
+                        Clasificaste correctamente todos los servicios.
+
+                    </div>
+
+                `;
+
+            }
+
+        }else{
+
+            zone.classList.add("error");
+
+            dragged.classList.add("wrong-logo");
+
+            setTimeout(()=>{
+
+                zone.classList.remove("error");
+
+                dragged.classList.remove("wrong-logo");
+
+                logoContainer.appendChild(dragged);
+
+            },600);
+
+        }
+
+        dragged = null;
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
